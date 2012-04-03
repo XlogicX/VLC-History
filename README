@@ -1,5 +1,21 @@
-So these are some odd scripts that are probably only useful to me. The dilemma was that I watch a few TV shows, and I watch them sequentially, and sometimes it's hard to keep track of which episode I left off on for which show. I used to be a heavy user of Fences for windows and just have a copy of the most recent show in a fence, then I could resize the fence to reduce desktop clutter (or the visual side-effect of it).
+So these are some odd scripts that are probably only useful to me. 
+The dilemma was that I watch a few TV shows, and I watch them sequentially, 
+and sometimes it's hard to keep track of which episode I left off on for 
+which show. I used to be a heavy user of Fences for windows and just have 
+a copy of the most recent show in a fence, then I could resize the fence 
+to reduce desktop clutter (or the visual side-effect of it).
 
-Linux doesn't have fences, or anything I know of that would be close to it. Then I saw that VLC has a most recent videos menu, showing you the last 10 videos you have watched. That's kind of the idea I was looking for, it would work perfectly if I were only watching a couple different TV shows evenly distributed. But for anything else (namely, my own habits), I would need a much larger history.
+Linux doesn't have fences, or anything I know of that would be close to it. 
+Then I saw that VLC has a most recent videos menu, showing you the last 10 
+videos you have watched. That's kind of the idea I was looking for, it 
+would work perfectly if I were only watching a couple different TV shows 
+evenly distributed. But for anything else (namely, my own habits), I would 
+need a much larger history.
 
-So I made two scripts to solve this. One script to make a bigger history, piggybacking of of VLC's .conf file and cron'ing the script to have my own list. And then another script that I can run to query whichever TV show I want (including regex queries). It will respond with the full path of the last entry in the list matching the search/regex. If no matches, it does nothing. Nothing fancy, just a quick hack I put together.
+So I made two scripts to solve this. One script to make a bigger history, 
+piggybacking of of VLC's .conf file and cron'ing the script to have my own 
+list (recent_vlc.pl). And then another script (vlchistory.pl) that I can run to query 
+whichever TV show I want (including regex queries). It will respond with 
+the full path of the last entry in the list matching the search/regex. 
+If no matches, it does nothing. Nothing fancy, just a quick hack I put 
+together.
